@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddNoteFrgment">
+
+    <EditText
+        android:id="@+id/PlannedDate"
+        android:hint="Choose Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:clickable="true"
+        android:maxLines="1" />
+
+    <EditText
+        android:layout_below="@+id/PlannedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:hint="Title"
+        android:id="@+id/edit_title"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:layout_below="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:hint="Note"
+        android:id="@+id/edit_note"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_done" />
+
+
+</RelativeLayout>
